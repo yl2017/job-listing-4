@@ -30,7 +30,7 @@
   background-color: rgba(250, 250, 250, 0);//背景颜色含透明度全透明
   max-width: 500px;//最大宽度
   margin-top: 325px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
+  margin-bottom: 10;//这样就可以紧接息面的描述文字
   border-top-right-radius: 3px;//右上角圆边
   border-top-left-radius: 3px;//左上角圆边
  }
@@ -45,7 +45,7 @@
   .jumbotron p {
       margin: 0;//上下左右margin为0
       font-size: 26px;//字体大小
-      max-width: 500px;//最大宽度
+      max-width: 1100px;//最大宽度
       background-color: rgba(250, 250, 250, 0);//背景颜色含透明度全透明
       padding: 20px;//上下左右padding为20px
       text-align:right;//文字右对齐
@@ -279,3 +279,42 @@
 .login-help{
   font-size: 12px;
 }
+
+//---------Content---------
+
+ .content-section-a {
+     padding: 50px 0;
+     background-color: #f8f8f8;
+ }
+
+ .content-section-b {
+     padding: 50px 0;
+     border-top: 1px solid #e7e7e7;
+     border-bottom: 1px solid #e7e7e7;
+ }
+
+ .section-heading-spacer {
+     float: left;
+     width: 200px;
+     border-top: 3px solid #e7e7e7;
+ }
+
+ .section-heading {
+     margin-bottom: 30px;
+ }
+
+ .lead {
+     font-size: 18px;
+     font-weight: 400;
+ }
+
+ //---------Footer---------
+
+ footer {
+     color: white;
+ }
+
+ footer .footer-below {
+     padding: 25px 0;
+     background-color: #233140;
+ }
