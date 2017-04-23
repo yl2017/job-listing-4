@@ -21,10 +21,10 @@
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
  .jumbotron {
-   background-image:url('https://ooo.0o0.ooo/2017/04/19/58f741a4671f5.png');
+   background-image:url('');
    background-repeat: no-repeat;
    background-size: cover;
-   padding-bottom: 110px;
+   padding-bottom: 30px;
  }
 
  .title {
@@ -108,6 +108,9 @@
 
      margin-top: -60px;
 
+
+
+
  }
 
  @media (min-width: 768px) {
@@ -160,9 +163,9 @@
  }
  //------首页大图文字描述部分------
 
-  .container-fluid .jumbotron{
-   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  .container-jumbotron{
+   padding-bottom: 0x;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0 -15px 1px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;//圆角为0
  }
 
@@ -317,6 +320,11 @@
  }
 
 //---轮播效果---
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
