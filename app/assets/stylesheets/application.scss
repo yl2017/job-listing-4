@@ -20,15 +20,60 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+
+ //---轮播效果---
+
+ .carousel-inner {
+    height: 600px;
+    width: 1280px;
+    margin: -10px;
+ }
+
+ .carousel-inner img {
+     width: 1275px; /* Set width to 100% */
+     height: 100px;
+
+     margin: auto;
+ }
+
+ .carousel-control.right, .carousel-control.left {
+     background-image: none;
+     color: #f4511e;
+ }
+
+ .carousel-indicators li {
+     border-color: #f4511e;
+ }
+
+ .carousel-indicators li.active {
+     background-color: #f4511e;
+ }
+
+ .item h4 {
+     font-size: 19px;
+     line-height: 1.375em;
+     font-weight: 400;
+     font-style: italic;
+     margin: 70px 0;
+ }
+
+ .item span {
+     font-style: normal;
+ }
+
+
+
+//-------jumbotron------
  .jumbotron {
    background-image:url('');
    background-repeat: no-repeat;
    background-size: cover;
+   height: 500px;
    padding-bottom: 30px;
  }
 
  .title {
-  background-color: rgba(250, 250, 250, 0);//背景颜色含透明度全透明
+  background-color: rgba(250, 250, 250, 0.5);//背景颜色含透明度全透明
   max-width: 500px;//最大宽度
   margin-top: 325px;//和顶部拉开距离
   margin-bottom: 10;//这样就可以紧接息面的描述文字
@@ -36,12 +81,7 @@
   border-top-left-radius: 3px;//左上角圆边
  }
 
-  .jumbotron h1, .jumbotron .h1 {
-      text-align: right;//文字右对齐
-      color: #222;  //字体颜色
 
-      padding: 50px 20px 0;//上50px，左右20px，下0
-  }
 
   .jumbotron p {
       margin: 0;//上下左右margin为0
@@ -50,17 +90,18 @@
       background-color: rgba(250, 250, 250, 0);//背景颜色含透明度全透明
       padding: 20px;//上下左右padding为20px
       text-align:right;//文字右对齐
-      color: #BDBDBD;//字体颜色
+      color: red;//字体颜色
 
       border-bottom-right-radius: 3px;//右下角圆边
       border-bottom-left-radius: 3px;//左下角圆边
   }
 
+
  .slogan {
    margin-top: 10px;
    margin-bottom: 50px;
    text-align: center;
-   color: white;
+   color: red;
    top: 12px;
  }
 
@@ -75,6 +116,8 @@
   text-align: center;
   top: 20px;
 }
+
+//-------thumbnail------
 
 .thumbnail {
     border: 0 none;
@@ -161,7 +204,7 @@
    color: #212121;
 
  }
- //------首页大图文字描述部分------
+ //------首页第二部分文字描述部分------
 
   .container-jumbotron{
    padding-bottom: 0x;//内部的底部边距，这样按钮不会很靠近底部了
@@ -319,37 +362,6 @@
      font-weight: 400;
  }
 
-//---轮播效果---
-
-.carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-}
-
-.carousel-indicators li {
-    border-color: #f4511e;
-}
-
-.carousel-indicators li.active {
-    background-color: #f4511e;
-}
-
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-}
-
-.item span {
-    font-style: normal;
-}
 
 
  //---------Footer---------
