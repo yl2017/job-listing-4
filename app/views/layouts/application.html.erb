@@ -12,17 +12,20 @@
   <body>
 
 
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container">
+
         <%= render "common/navbar" %>
-      </div>
+
       <%= render "common/flashes" %>
       <%= yield %>
     </div>
-    <div class="footer">
-      <div class="container">
+
+
+      <div class="footer">
+
         <%= render "common/footer" %>
       </div>
-    </div>
+
+
   </body>
 </html>

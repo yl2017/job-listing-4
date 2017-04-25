@@ -21,32 +21,116 @@
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
+ //-------navbar------
+
+ .navbar-default {
+      background-color: black;  //背景颜色
+
+      border-color: black; //边框色
+
+      margin-top: -90px;
+      margin-bottom: 0;
+      margin-right: -15px;
+      margin-left: -15px;
+
+   }
+
+  @media (min-width: 768px) {
+     .navbar {
+       border-radius: 0; //圆角为0
+     }
+   }
+
+    .navbar-default .navbar-brand {
+    color: #EF6C00; //字体颜色
+
+    padding: 10px 15px; //上下10px，左右15px
+    line-height: 30px; //文字行高
+  }
+
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #FF6F00; //鼠标放置在链接上的文字颜色
+
+    background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+  }
+
+  .navbar-default .navbar-nav > li > a{
+    color: #EF6C00;
+
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #FF6F00;
+
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #FF6F00;
+
+    background-color: #FFE0B2;
+
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFE0B2;
+
+    color: #212121;
+
+  }
+
+  .join {
+    color: #EF6C00; //字体颜色
+
+    padding: 10px 15px; //上下10px，左右15px
+    line-height: 50px; //文字行高
+
+
+  }
+
+
  //---轮播效果---
 
+ #myCarousel {
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: -30px;
+   margin-left: -15px;
+ }
+
  .carousel-inner {
-    height: 600px;
-    width: 1280px;
-    margin: -10px;
+    height: 687px;
+    width: 100%;
+    margin-top: -13px;
+    margin-bottom: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+
  }
 
  .carousel-inner img {
-     width: 1275px; /* Set width to 100% */
-     height: 100px;
+     width: 1300px; /* Set width to 100% */
 
-     margin: auto;
+
+     margin: 0;
  }
 
  .carousel-control.right, .carousel-control.left {
      background-image: none;
-     color: #f4511e;
+     color: #FF6F00;
  }
 
  .carousel-indicators li {
-     border-color: #f4511e;
+     border-color: #FF6F00;
  }
 
  .carousel-indicators li.active {
-     background-color: #f4511e;
+     background-color: #FF6F00;
  }
 
  .item h4 {
@@ -140,70 +224,7 @@
   transition: 0.5s;
 }
 
-//-------navbar------
 
- .navbar-default {
-     background-color: #212121;  //背景颜色
-
-     border-color: #212121; //边框色
-
-     margin-bottom: 0; //底部 margin 不撑开距离
-
-     margin-top: -60px;
-
-
-
-
- }
-
- @media (min-width: 768px) {
-    .navbar {
-      border-radius: 0; //圆角为0
-    }
-  }
-
-   .navbar-default .navbar-brand {
-   color: #EF6C00; //字体颜色
-
-   padding: 10px 15px; //上下10px，左右15px
-   line-height: 30px; //文字行高
- }
-
- .navbar-default .navbar-brand:hover,
- .navbar-default .navbar-brand:focus {
-   color: #FF6F00; //鼠标放置在链接上的文字颜色
-
-   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
- }
-
- .navbar-default .navbar-nav > li > a{
-   color: #EF6C00;
-
- }
-
- .navbar-default .navbar-nav > li > a:hover,
- .navbar-default .navbar-nav > li > a:focus {
-   color: #FF6F00;
-
-   background-color: transparent;
- }
- .navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus {
-   color: #FF6F00;
-
-   background-color: #FFE0B2;
-
- }
-
- .navbar-default .navbar-nav > .open > a,
- .navbar-default .navbar-nav > .open > a:focus,
- .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
-
-   color: #212121;
-
- }
  //------首页第二部分文字描述部分------
 
   .container-jumbotron{
@@ -378,6 +399,7 @@ body {
 }
 
 .footer {
+  background-color: black;
  position: absolute;
  bottom: 0;
  width: 100%;
@@ -385,14 +407,16 @@ body {
  text-align: center;
  text-decoration-color: #FF6F00;
 
+}
 
-
-
+.container {
+ margin-top: 25px;
+ width: 100%;
 
 }
 
-.container{
- margin-top: 25px;
- width: 100%;
+.footertext {
+  color: #FF6F00;
+  margin-top: 25px;
 
 }
