@@ -99,7 +99,7 @@
  #myCarousel {
    margin-top: 0;
    margin-bottom: 0;
-   margin-right: -30px;
+   margin-right: -15px;
    margin-left: -15px;
 
 
@@ -111,16 +111,15 @@
     width: 100%;
     margin-top: -13px;
     margin-bottom: 0;
-    margin-right: -15px;
-    margin-left: -15px;
+
 
  }
 
  .carousel-inner img {
-     width: 1500px; /* Set width to 100% */
+     width: 100%; /* Set width to 100% */
 
 
-     margin: 0;
+
  }
 
  .carousel-control.right, .carousel-control.left {
@@ -153,6 +152,8 @@
  }
 
 //---video---
+
+
 
 .videoheader{
   text-align: center;
