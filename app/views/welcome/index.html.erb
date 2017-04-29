@@ -1,4 +1,12 @@
+
 <!-- 首页大图滚动特效部分之滚动的3个小圆圈-->
+<!-- <head>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+</head> -->
+
 
 <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
   <!-- Indicators -->
@@ -12,21 +20,23 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="https://ooo.0o0.ooo/2017/04/23/58fcc825bf6fb.jpg" alt="区块链.jpg" title="区块链.jpg" />
-
-
+      <div class="fly">
+      <!-- <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a> -->
+      </div>
 
     </div>
     <div class="item">
       <img src="https://ooo.0o0.ooo/2017/04/23/58fcc826a0d9c.jpg" alt="比特币.jpg" title="比特币.jpg" />
-
-
+      <div class="fly">
+      <!-- <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a> -->
+    </div>
 
     </div>
     <div class="item">
       <img src="https://ooo.0o0.ooo/2017/04/23/58fccd5f5af31.jpg" alt="比特币2.jpg" title="比特币2.jpg" />
-
-
-
+     <div class="fly">
+      <!-- <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a> -->
+    </div>
     </div>
   </div>
 
@@ -41,9 +51,31 @@
   </a>
 </div>
 
+<!-- 闪光字 -->
+
+
+<div class="container">
+ <div class="row">
+ <svg viewBox="0 0 1200 300">
+   <symbol id="s-text">
+   <text text-anchor="middle" x="50%" y="80%">What is bitcon?</text>
+ </symbol>
+
+ <g class = "g-ants">
+   <use xlink:href="#s-text" class="text-copy"></use>
+   <use xlink:href="#s-text" class="text-copy"></use>
+   <use xlink:href="#s-text" class="text-copy"></use>
+   <use xlink:href="#s-text" class="text-copy"></use>
+   <use xlink:href="#s-text" class="text-copy"></use>
+ </g>
+</svg>
+ </div>
+</div>
+
+
 <!-- video -->
 <div clsss="video">
-  <h1 class="videoheader">What is bitcon? How it works?</h1>
+  <!-- <h1 class="videoheader">What is bitcon? How it works?</h1> -->
   <iframe width="1250" height="360" src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0" allowfullscreen></iframe>
 </div>
 
@@ -133,3 +165,36 @@
     </div>
   </div>
 </section>
+
+
+
+
+
+<!-- 时钟-->
+<!-- <head>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body> -->
