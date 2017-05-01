@@ -201,6 +201,12 @@
   margin: 30px;
   text-align: center;
   top: 20px;
+  color: #FF6F00;
+
+}
+
+.h3text {
+  color: #0091EA;
 }
 
 //-------thumbnail------
@@ -209,6 +215,12 @@
     border: 0 none;
     box-shadow: none;
     margin-top: 60px;
+    background: #030321;
+
+}
+
+.thumbnail img {
+border-radius: 50%;
 }
 
 .custab{
