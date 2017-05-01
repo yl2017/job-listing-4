@@ -1,10 +1,10 @@
-<h1> Add a job </h1>
+<h1 class="tdtext"> Add a job </h1>
 <%= simple_form_for [:admin,@job] do |f| %>
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "薪资下限" %>
-<%= f.input :wage_upper_bound, :label => "薪资上限" %>
-<%= f.input :contact_email %>
-<%= f.input :is_hidden %>
-<%= f.submit "Submit" %>
+<h5 class="tdtext"><%= f.input :title %></h5>
+<h5 class="tdtext"><%= f.input :description %></h5>
+ <h5 class="tdtext"><%= f.input :wage_lower_bound, :label => "薪资下限" %></h5>
+<h5 class="tdtext"><%= f.input :wage_upper_bound, :label => "薪资上限" %></h5>
+<h5 class="tdtext"><%= f.input :contact_email %></h5>
+<h5 class="tdtext"><%= f.input :is_hidden %></h5>
+<h5 class="tdtext"><%= f.submit "Submit" %></h5>
 <% end %>

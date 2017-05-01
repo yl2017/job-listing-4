@@ -30,26 +30,26 @@
 
   <thead>
     <tr>
-      <td>
+      <td class="tdtext">
           职缺</td>
-      <td>薪资下限</td>
-      <td>薪资上限</td>
-      <td>刊登时间</td>
+      <td class="tdtext">薪资下限</td>
+      <td class="tdtext">薪资上限</td>
+      <td class="tdtext">刊登时间</td>
     </tr>
   </thead>
   <tbody>
     <% @jobs.each do |job| %>
   <tr>
-    <td>
+    <td class="tdtext">
       <%= link_to(job.title, job_path(job)) %>
     </td>
-    <td>
+    <td class="tdtext">
       <%= job.wage_lower_bound %>
     </td>
-    <td>
+    <td class="tdtext">
       <%= job.wage_upper_bound %>
     </td>
-    <td>
+    <td class="tdtext">
       <%= job.created_at %>
     </td>
   </tr>

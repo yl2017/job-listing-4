@@ -7,11 +7,11 @@
     <hr>
 
 
-<h3> 投交履历到 <%= @job.title %> </h3>
+<h3 class="tdtext"> 投交履历到 <%= @job.title %> </h3>
 
 <hr>
 <%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :attachment %>
-  <%= f.submit "送出" %>
+<h4 class="tdtext">  <%= f.input :content %></h4>
+  <h4 class="tdtext"> <%= f.input :attachment %></h4>
+  <h4 class="tdtext"> <%= f.submit "送出" %></h4>
 <% end %>
