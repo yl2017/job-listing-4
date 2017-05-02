@@ -118,10 +118,11 @@
 
 
 
+
  }
 
  .carousel-inner {
-    height: 100%;
+
     width: 100%;
     margin-top: -13px;
     margin-bottom: 0;
@@ -131,6 +132,7 @@
 
  .carousel-inner img {
      width:  100%; /* Set width to 100% */
+
 
 
 
@@ -173,12 +175,35 @@
  //    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
  //  }
 
+
+
+ .slide-text > a.btn-default{
+     color: #000;
+     font-weight: 400;
+     font-size: 13px;
+     line-height: 15px;
+     margin-right: 10px;
+     text-align: center;
+     padding: 17px 30px;
+     white-space: nowrap;
+     letter-spacing: 1px;
+     display: inline-block;
+     border: none;
+     text-transform: uppercase;
+     -webkit-animation-delay: 2s;
+     animation-delay: 2s;
+     -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+ }
+
+
 //---video---
 
 
 
-.videoheader{
-  text-align: center;
+.video{
+  margin: 0 auto;
 
 }
 //------首页第三部分文字描述部分之二------
